@@ -5,7 +5,7 @@ var express = require("express"),
     flash = require("connect-flash"),
     passport = require("passport"),
     localStrategy = require("passport-local"),
-    methodOverride = require("method-override")
+    methodOverride = require("method-override");
     
 var indexRoutes = require("./routes/index");
 
@@ -31,6 +31,12 @@ passport.deserializeUser(User.deserializeUser());
 */
 
 app.use("/", indexRoutes);
+//app.use("/quiz", quizRoutes);
+
+
+app.get("/quiz", function(req, res){
+    res.render("quiz");
+});
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("THE JS QUIZ APP SERVER HAS STARTED!!!");

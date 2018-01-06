@@ -1,8 +1,8 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/quiz", function(req, res){
-    res.render("quiz");
+router.get("/", function(req, res){
+    res.render("index");
 });
 
 module.exports = router;

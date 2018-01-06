@@ -11,12 +11,12 @@ a:hover, a:focus{
   color: #1976d2;
 }
 
-.navbar-fixed {
+/*.navbar-fixed {
   height: auto!important;
   position: absolute;
   top: 0;
   left: 0;
-}
+}*/
 
 .brand-logo {
   font-style: italic;
@@ -39,6 +39,7 @@ a:hover, a:focus{
   padding: 0;
   margin: 0;
   text-align: center;
+  margin-top: -32px;
 }
   
 .banner-container h1{
